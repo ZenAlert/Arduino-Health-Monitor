@@ -36,11 +36,6 @@ const unsigned long postingInterval = 5L*60L*1000L;  // delay between call, in m
 
 IPAddress empty(0,0,0,0);
 
-// union IPAddressConverter {
-//   uint32_t ipInteger;
-//   uint8_t ipArray[4];
-// };
-
 char buf[16];
 
 char strTMP;  
