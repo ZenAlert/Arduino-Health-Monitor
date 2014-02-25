@@ -10,8 +10,7 @@
  In order to work you have to get an object_id ID of your Arduino on www.zenalert.com 
  
  This code is in the public domain.
- 
- */
+*/
 
 #include <SPI.h>
 #include <Ethernet.h>
