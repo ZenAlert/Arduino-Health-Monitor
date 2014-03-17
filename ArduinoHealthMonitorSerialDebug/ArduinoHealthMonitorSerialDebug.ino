@@ -7,7 +7,7 @@
  This example use DNS, by assigning the Ethernet client with a MAC address,
  IP address, and DNS address.
 
- In order to work you have to get an object_id ID of your Arduino on www.zenalert.com 
+ In order to work you have to get an thing_id ID of your Arduino on www.zenalert.com 
  
  This code is in the public domain.
  
@@ -61,7 +61,7 @@ void loop() {
   
   if (client.connect(server, 80)) {
       //Replace object_id and security_key with your data (you need a free account Zen Alert - www.zenalert.com)
-      client.println("GET /call?code=alive&object_id=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&security_key=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&description=Arduino-Test HTTP/1.0");      
+      client.println("GET /call?code=alive&thing_id=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&security_key=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&description=Arduino-Test HTTP/1.0");      
       client.println();
       Serial.println("Call executed");
 
