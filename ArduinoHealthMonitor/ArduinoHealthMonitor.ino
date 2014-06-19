@@ -31,7 +31,7 @@ unsigned long nowTime= 0;
 unsigned long connectionWait= 0;
 int connectionTimeOut = 20;
 
-const unsigned long postingInterval = 5L*60L*1000L;  // delay between call, in milliseconds - 5 minutes
+const unsigned long postingInterval = 5L*60L*1000L;  // delay between http calls, in milliseconds - 5 minutes
 
 IPAddress empty(0,0,0,0);
 
@@ -50,7 +50,7 @@ void loop() {
   
   if (client.connect(server, 80)) {
       //Replace object_id and security_key with your data (you need a free account Zen Alert - www.zenalert.com)
-      client.println("GET /call?code=alive&thing_id=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&security_key=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&description=Arduino-Test HTTP/1.0");      
+      client.println("GET /signal?code=alive&thing_id=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&security_key=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&description=Arduino-Test HTTP/1.0");      
       client.println();
 
       lastConnectionTime = millis() / 1000;
