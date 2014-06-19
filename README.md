@@ -3,5 +3,5 @@
 
 ## Overview
 
-An Arduino HTTP Client for Zen Alert Service that uses the Arduino Ethernet Library. 
+"Arduino Health Monitor" uses ZenAlert Cloud Platform to alert you in case of absence of electricity or connectivity of the device.
 
