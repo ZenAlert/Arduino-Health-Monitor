@@ -60,7 +60,7 @@ void setup() {
 void loop() {
   
   if (client.connect(server, 80)) {
-      //Replace thing_id and security_key with your data (you need a free account Zen Alert - www.zenalert.com)
+      //Replace thing_id and api_key with your data (you need a free account Zen Alert - www.zenalert.com)
       client.println("GET /signal?code=alive&thing_id=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&api_key=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&description=Arduino-Test HTTP/1.0");      
       client.println();
       Serial.println("Call executed");
