@@ -8,5 +8,5 @@
 
 ## Requirements
 
-.Arduino Ethernet or Arduino with the Arduino Ethernet Shield.
-.ZenAlert free account.
+.Arduino Ethernet or Arduino with the Arduino Ethernet Shield<br/>
+.ZenAlert free account<br/>
